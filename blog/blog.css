@@ -92,6 +92,9 @@ li a:hover{
 .articles{
     display: flex;
     text-align: center;
+    height: 2390px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .articles article{
     padding: 30px;
