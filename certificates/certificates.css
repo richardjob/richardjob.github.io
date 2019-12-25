@@ -2,6 +2,20 @@
     font-size: 1rem;
     word-spacing: 100px;
 }
+@media screen and (max-width:360px){
+    #contact{
+        word-spacing: 0em;
+    }
+}
+@media screen and (min-width:900px){
+    #contact{
+        word-spacing: 10em;
+    }
+    li a{
+        border-right: 1px solid gray;
+        border-right-style: solid;
+    }
+}
 h1{
     font-size: 3rem;
     letter-spacing: 2px;
@@ -60,6 +74,7 @@ li a:hover{
 .fa-instagram{
     background-color: white;
     color: #E1306C;
+    border-right-style: none;
 }
 .fa-instagram:hover{
     background-color: white;
