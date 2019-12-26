@@ -2,6 +2,9 @@
     font-size: 1em;
     word-spacing: 2em;  
 }
+#name{
+    font-size: 34px;
+}
 @media screen and (max-width:360px){
     #contact{
         word-spacing: 0em;
@@ -15,10 +18,10 @@
         border-right: 1px solid gray;
         border-right-style: solid;
     }
-}
-h1{
-    font-size: 3em;
-    letter-spacing: 2px;
+    #name{
+        font-size: 46px;
+        letter-spacing: 2px;
+    }
 }
 ul{
     list-style: none;
@@ -92,9 +95,9 @@ li a:hover{
 .articles{
     display: flex;
     text-align: center;
-    height: 2390px;
     overflow-x: auto;
     overflow-y: hidden;
+    height: 450px;
 }
 .articles article{
     padding: 30px;

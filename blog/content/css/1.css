@@ -1,0 +1,22 @@
+.center{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 30px;
+    margin-top: 20px;
+}
+p{
+    font-size: larger;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+button{
+    color: white;
+    background-color: #654321;
+    font-size: 25px;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
