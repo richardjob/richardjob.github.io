@@ -5,9 +5,9 @@
 #name{
     font-size: 34px;
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:560px){
     #contact{
-        word-spacing: 0em;
+        word-spacing: 0.5em;
     }
 }
 @media screen and (min-width:700px){
