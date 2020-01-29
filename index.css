@@ -9,6 +9,10 @@
     #contact{
         word-spacing: 0.5em;
     }
+    p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 @media screen and (min-width:700px){
     #contact{
@@ -21,6 +25,10 @@
     #name{
         font-size: 46px;
         letter-spacing: 2px;
+    }
+    p{
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
 h1{
