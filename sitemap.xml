@@ -12,6 +12,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://richardjob.github.io/mars-man/knowledge.html</loc>
+  <lastmod>2020-03-03T05:15:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://richardjob.github.io/index.html</loc>
   <lastmod>2020-03-03T05:15:10+00:00</lastmod>
   <priority>0.80</priority>
