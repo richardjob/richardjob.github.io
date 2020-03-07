@@ -9,6 +9,12 @@ body{
     background-image: url("assets/blue-snow.png");
 }
 
+@media screen and (max-width: 400px){
+    body{
+        zoom: 30%;
+    }
+}
+
 /* *********************** */
 
 #nav-menu > ul{
@@ -103,7 +109,7 @@ body{
     
 }
 #project{
-    width: 500px;
+    width: 460px;
 }
 #project-txt{
     margin-top: 40px;
@@ -114,7 +120,7 @@ body{
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
-    width: 530px; 
+    width: 480px; 
     height: 300px;
     padding: 4px;
     border-radius: 10px;
