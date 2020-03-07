@@ -9,7 +9,7 @@ body{
     background-image: url("assets/blue-snow.png");
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     body{
         zoom: 30%;
     }
