@@ -1,14 +1,17 @@
 var projectImageLinks = [
     'assets/projects/mars-man.png',
     'assets/projects/image-classifier.jpg',
+    'assets/projects/guess-it.png'
 ]
 var projectDescription = [
     'Talk to Mars Man (Google action)',
     'Image Classifier in Browser',
+    'Guess it, a Android number game'
 ]
 var projectLinks = [
     'https://github.com/richardjob/mars-man',
     'https://github.com/richardjob/image-classifier',
+    'https://github.com/richardjob/Guess_it',
 ]
 var projectID = 0
 
