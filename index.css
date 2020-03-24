@@ -53,6 +53,9 @@ body{
     .icon{
         display: block;
     }
+    .icon > i{
+        font-size: 45px;
+    }
     
     .topnav a:not(:first-child){
         display: none;
