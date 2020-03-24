@@ -49,6 +49,7 @@ body{
 @media screen and (max-width:600px){
     #nav-menu > a{
         float: none;
+        font-size: 30px;
     }
     .icon{
         display: block;
