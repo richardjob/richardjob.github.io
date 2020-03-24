@@ -1,7 +1,7 @@
 var projectImageLinks = [
-    'assets/projects/mars-man.png',
-    'assets/projects/image-classifier.jpg',
-    'assets/projects/guess-it.png'
+    'assets/projects/mars-man.webp',
+    'assets/projects/image-classifier.webp',
+    'assets/projects/guess-it.webp'
 ]
 var projectDescription = [
     'Talk to Mars Man (Google action)',
@@ -25,8 +25,6 @@ var link = document.getElementById('project-link')
 document.getElementById('previous').addEventListener("click", function (e) {
     e.preventDefault()
     if (projectID != 0) {
-        project.classList.remove("w3-animate-right")
-        project.classList.toggle("w3-animate-left")
         projectID = projectID - 1
         img.src = projectImageLinks[projectID]
         description.textContent = projectDescription[projectID]
@@ -38,8 +36,6 @@ document.getElementById('previous').addEventListener("click", function (e) {
 document.getElementById('next').addEventListener("click", function (e) {
     e.preventDefault()
     if (projectID < projectImageLinks.length - 1) {
-        project.classList.remove("w3-animate-left")
-        project.classList.toggle("w3-animate-right")
         projectID = projectID + 1
         img.src = projectImageLinks[projectID]
         description.textContent = projectDescription[projectID]
