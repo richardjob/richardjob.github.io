@@ -29,7 +29,7 @@ function next() {
   document.getElementById(
     "projDescription"
   ).innerHTML = `<h3>${descriptions[carouselState].title}</h3><p>${descriptions[carouselState].des}</p>
-<p style="font-size: 40px; transition: ease-in-out;"><a href="${descriptions[carouselState].link}" target="_blank"
+<p style="font-size: 40px; transition: ease-in-out 2s;"><a href="${descriptions[carouselState].link}" target="_blank"
         class="fa fa-github text-white"></a></p>`;
 }
 
@@ -43,7 +43,7 @@ function prev() {
   document.getElementById(
     "projDescription"
   ).innerHTML = `<h3>${descriptions[carouselState].title}</h3><p>${descriptions[carouselState].des}</p>
-<p style="font-size: 40px; transition: ease-in-out;"><a href="${descriptions[carouselState].link}" target="_blank"
+<p style="font-size: 40px; transition: ease-in-out 2s;"><a href="${descriptions[carouselState].link}" target="_blank"
         class="fa fa-github text-white"></a></p>`;
 }
 
