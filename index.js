@@ -1,50 +1,52 @@
-function navClick() {
-    var x = document.getElementById("nav-menu")
-    if (x.className === "topnav") x.className += " responsive"
-    else x.className = "topnav"
+var descriptions = [
+  {
+    title: "Guess IT",
+    des: "",
+    link: "https://github.com/richardjob/Guess_it",
+  },
+  {
+    title: "Image Classifier",
+    des: "",
+    link: "https://github.com/richardjob/image-classifier",
+  },
+  {
+    title: "Mars Man",
+    des: "",
+    link: "https://github.com/richardjob/mars-man",
+  },
+];
+
+var carouselState = 0;
+
+/////// Next()
+function next() {
+  if (carouselState + 1 == descriptions.length) {
+    carouselState = 0;
+  } else {
+    carouselState++;
+  }
+
+  document.getElementById(
+    "projDescription"
+  ).innerHTML = `<h3>${descriptions[carouselState].title}</h3><p>${descriptions[carouselState].des}</p>
+<p style="font-size: 40px;"><a href="${descriptions[carouselState].link}" target="_blank"
+        class="fa fa-github text-white"></a></p>`;
 }
 
-var projectImageLinks = [
-    'assets/projects/mars-man.webp',
-    'assets/projects/image-classifier.webp',
-    'assets/projects/guess-it.webp'
-]
-var projectDescription = [
-    'Talk to Mars Man (Google action)',
-    'Image Classifier in Browser',
-    'Guess it, a Android number game'
-]
-var projectLinks = [
-    'https://github.com/richardjob/mars-man',
-    'https://github.com/richardjob/image-classifier',
-    'https://github.com/richardjob/Guess_it',
-]
-var projectID = 0
+/////// Previous()
+function prev() {
+  if (carouselState - 1 == -1) {
+    carouselState = descriptions.length - 1;
+  } else {
+    carouselState--;
+  }
+  document.getElementById(
+    "projDescription"
+  ).innerHTML = `<h3>${descriptions[carouselState].title}</h3><p>${descriptions[carouselState].des}</p>
+<p style="font-size: 40px;"><a href="${descriptions[carouselState].link}" target="_blank"
+        class="fa fa-github text-white"></a></p>`;
+}
 
-var project = document.getElementById('project')
-var img = document.getElementById('project-img')
-var description = document.getElementById('project-txt')
-var link = document.getElementById('project-link')
-
-
-
-document.getElementById('previous').addEventListener("click", function (e) {
-    e.preventDefault()
-    if (projectID != 0) {
-        projectID = projectID - 1
-        img.src = projectImageLinks[projectID]
-        description.textContent = projectDescription[projectID]
-        link.href = projectLinks[projectID]
-    }
-})
-
-
-document.getElementById('next').addEventListener("click", function (e) {
-    e.preventDefault()
-    if (projectID < projectImageLinks.length - 1) {
-        projectID = projectID + 1
-        img.src = projectImageLinks[projectID]
-        description.textContent = projectDescription[projectID]
-        link.href = projectLinks[projectID]
-    }
-})
+$(document).ready(() => {
+  setInterval(next, 8000);
+});
