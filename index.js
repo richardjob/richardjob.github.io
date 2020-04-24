@@ -48,5 +48,5 @@ function prev() {
 }
 
 $(document).ready(() => {
-  setInterval(next, 8000);
+  setInterval(next, 8100);
 });
