@@ -1,52 +1,37 @@
 var descriptions = [
   {
     title: "Guess IT",
-    des: "",
+    des:
+      "A Simple Android number game built with Android studio and Java",
     link: "https://github.com/richardjob/Guess_it",
   },
   {
     title: "Image Classifier",
-    des: "",
+    des: "A Image classifier which works on web, built using google tensorflow.js (pre-built model)",
     link: "https://github.com/richardjob/image-classifier",
   },
   {
     title: "Mars Man",
-    des: "",
+    des:
+      "A google action using NASA public api to get weather updates and images from Mars.",
     link: "https://github.com/richardjob/mars-man",
   },
 ];
 
-var carouselState = 0;
-
-/////// Next()
-function next() {
-  if (carouselState + 1 == descriptions.length) {
-    carouselState = 0;
-  } else {
-    carouselState++;
+function slideNext() {
+  var divs = document.getElementsByClassName("nxtfunc");
+  for (var i = 0; i < divs.length; i++) {
+    var classes = divs[i].className.split(" ");
+    if (classes.includes("active")) {
+      document.getElementById(
+        "projDescription"
+      ).innerHTML = `<h3 style="transition: ease-in-out;">${descriptions[i].title}</h3><p style="transition: ease-in-out";>${descriptions[i].des}</p>
+      <p style="font-size: 40px; transition: ease-in-out;"><a href="${descriptions[i].link}" target="_blank"
+              class="fa fa-github text-white"></a></p>`;
+    }
   }
-
-  document.getElementById(
-    "projDescription"
-  ).innerHTML = `<h3>${descriptions[carouselState].title}</h3><p>${descriptions[carouselState].des}</p>
-<p style="font-size: 40px;"><a href="${descriptions[carouselState].link}" target="_blank"
-        class="fa fa-github text-white"></a></p>`;
-}
-
-/////// Previous()
-function prev() {
-  if (carouselState - 1 == -1) {
-    carouselState = descriptions.length - 1;
-  } else {
-    carouselState--;
-  }
-  document.getElementById(
-    "projDescription"
-  ).innerHTML = `<h3>${descriptions[carouselState].title}</h3><p>${descriptions[carouselState].des}</p>
-<p style="font-size: 40px;"><a href="${descriptions[carouselState].link}" target="_blank"
-        class="fa fa-github text-white"></a></p>`;
 }
 
 $(document).ready(() => {
-  setInterval(next, 8100);
+  setInterval(slideNext, 0);
 });
