@@ -25,8 +25,8 @@ function slideNext() {
     if (classes.includes("active")) {
       document.getElementById(
         "projDescription"
-      ).innerHTML = `<h3 style="transition:all 1s ease-in-out;">${descriptions[i].title}</h3><p style="transition:all 1s ease-in-out";>${descriptions[i].des}</p>
-      <p style="font-size: 40px; transition:all 1s ease-in-out;"><a href="${descriptions[i].link}" target="_blank"
+      ).innerHTML = `<h3>${descriptions[i].title}</h3><p>${descriptions[i].des}</p>
+      <p style="font-size: 40px;"><a href="${descriptions[i].link}" target="_blank"
               class="fa fa-github text-white"></a></p>`;
     }
   }
