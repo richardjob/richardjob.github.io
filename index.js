@@ -27,7 +27,7 @@ function slideNext() {
         "projDescription"
       ).innerHTML = `<h3>${descriptions[i].title}</h3><p>${descriptions[i].des}</p>
       <p style="font-size: 40px;"><a href="${descriptions[i].link}" target="_blank"
-              class="fa fa-github text-white"></a></p>`;
+              class="fab fa-github text-white"></a></p>`;
     }
   }
 }

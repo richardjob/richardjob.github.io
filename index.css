@@ -107,7 +107,8 @@ body::-webkit-scrollbar{
 .intro-img{
   text-align: right;
 }
-.fa{
+.fab{
+  margin: 2px;
   padding: 2px;
   width: 50px;
   text-align: center;
@@ -138,6 +139,16 @@ body::-webkit-scrollbar{
 }
 .fa-instagram:hover{
   color: #E1306C;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.fa-hackerrank{
+  color: #1BA94C;
+  border-right-style: none;
+  text-decoration: none;
+}
+.fa-hackerrank:hover{
+  color: #1BA94C;
   opacity: 0.7;
   text-decoration: none;
 }
