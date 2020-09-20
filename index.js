@@ -7,8 +7,8 @@ var descriptions = [
   },
   {
     title: "Image Classifier",
-    des: "A Image classifier which works on web, built using google tensorflow.js (pre-built model)",
-    link: "https://github.com/richardjob/image-classifier",
+    des: "A Image classifier which works on web, built using React.js ,Node.js and Imagga API",
+    link: "https://github.com/richardjob/react-image-classifier-public",
   },
   {
     title: "Mars Man",
