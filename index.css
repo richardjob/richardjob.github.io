@@ -169,6 +169,12 @@ body::-webkit-scrollbar{
   #blog-list{
     display: none;
   }
+  .calendar{
+    display: none;
+  }
+  #github-calendar{
+    display: none;
+  }
   .hor-cert{
     border: none;
     height: 80%;
@@ -186,6 +192,9 @@ body::-webkit-scrollbar{
   }
   #blog-list{
     display: flex;
+  }
+  .calendar{
+    display: inline-block;
   }
   .hor-cert{
     border: none;
