@@ -4,6 +4,10 @@ body {
   color: #22CC7E;
 }
 
+.navbar{
+  background-color: #151048;
+}
+
 .navbar-brand{
   color: white;
   font-size: 30px;
@@ -15,7 +19,6 @@ body {
   color: #22CC7E;
 }
 
-
 .nav-item a:before{
   content: "";
   position: absolute;
@@ -26,13 +29,60 @@ body {
   background-color: white;
 }
 
-.fade-in{
-  animation-name: fadeIn;
-  animation-duration: 5s;
-  animation-fill-mode: both;
+.blinking {
+  animation: cursor 1s infinite;
 }
 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
+#resume{
+  color: white;
+  text-decoration: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .4em;
+  padding-right: .4em;
+  width: 6em;
+  height: 2.5em;;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: transparent;
+  box-shadow: transparent;
+  font-size: larger;
+  font-family: sans-serif;
+} 
+
+#hire-me{
+  color: #EC615B;
+  margin-left: 1em;
+  text-decoration: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .4em;
+  padding-right: .4em;
+  width: 6em;
+  height: 2.5em;
+  border-radius: 10px;
+  border: 2px solid #EC615B;
+  background: transparent;
+  box-shadow: transparent;
+  font-size: larger;
+  font-family: sans-serif;
+}
+
