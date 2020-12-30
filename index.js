@@ -1,3 +1,8 @@
+function closeNav(){
+  console.log('Hello');
+  document.getElementById('nav-toggler').click()
+}
+
 var descriptions = [
   {
     title: "Guess IT",
@@ -16,7 +21,7 @@ var descriptions = [
       "A google action using NASA public api to get weather updates and images from Mars.",
     link: "https://github.com/richardjob/mars-man",
   },
-];
+]
 
 function slideNext() {
   var divs = document.getElementsByClassName("nxtfunc");
@@ -25,9 +30,9 @@ function slideNext() {
     if (classes.includes("active")) {
       document.getElementById(
         "projDescription"
-      ).innerHTML = `<h3>${descriptions[i].title}</h3><p>${descriptions[i].des}</p>
-      <p style="font-size: 40px;"><a href="${descriptions[i].link}" target="_blank"
-              class="fab fa-github text-white"></a></p>`;
+      ).innerHTML = `<h3 class="text-center">${descriptions[i].title}</h3><p class="mt-4">${descriptions[i].des}</p>
+      <p class="text-center"><a href="${descriptions[i].link}"><img src="./assets/icons/GitHub.png" width="32px" target="_blank"></img></a>
+      <a href="${descriptions[i].link}"><img class="m-4" src="./assets/icons/lightning.svg" width="32px" target="_blank"></img></a></p>`;
     }
   }
 }
