@@ -13,10 +13,25 @@ body {
   font-size: 30px;
 }
 
-.nav-item a {
+.menu-item a {
   font-size: larger;
   text-decoration: none;
   color: #22CC7E;
+  padding: 4px;
+}
+
+.menu-item :hover{
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+#pay-online a {
+  font-size: larger;
+  padding: 4px;
+  text-decoration: none;
+  color: #22CC7E;
+  border-radius: 10px;
+  border: 2px solid #EC615B;
 }
 
 .nav-item a:before{
