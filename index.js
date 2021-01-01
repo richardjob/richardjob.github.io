@@ -1,5 +1,4 @@
 function closeNav(){
-  console.log('Hello');
   document.getElementById('nav-toggler').click()
 }
 
