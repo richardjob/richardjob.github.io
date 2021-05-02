@@ -62,7 +62,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <!-- LinkedIn -->
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
   <!-- Custom css -->
   <link rel="stylesheet" href="./index.css">
@@ -191,12 +191,17 @@
         </span>
       </div>
 
+      <!-- Linkedin Profile Badge (Crashed) Replaced with Github profile -->
+
       <div class="col-lg-5 mt-4">
-        <div style="width: fit-content; border-radius: 10px;" class="LI-profile-badge bg-white m-auto" data-version="v1"
+        <!-- <div style="width: fit-content; border-radius: 10px;" class="LI-profile-badge bg-white m-auto" data-version="v1"
           data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="richardjob"><a
             class="LI-simple-link" target="_blank"
             href='https://in.linkedin.com/in/richardjob?trk=profile-badge'>Richard Job B</a>
-        </div>
+        </div> -->
+
+        <div class="github-card" data-github="richardjob" data-width="400" data-height="151" data-theme="default"></div>
+        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
       </div>
 
     </div>
