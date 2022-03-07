@@ -11,7 +11,21 @@ body{
 
 @media screen and (max-width: 500px){
     body{
-        zoom: 30%;
+        zoom: 50%;
+    }
+    #nav-menu > ul > li{
+        font-size: 2em;
+    }
+    p#about-txt {
+        font-size: 2.5em;
+    }
+    .horizontal{
+        width: 60%;
+        height: 60%;
+    }
+    .vertical{
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -21,6 +35,7 @@ body{
     float: right;
 }
 #nav-menu > ul > li{
+    font-size: larger;
     font-weight: 1000;
     float: left;
     list-style-type: none;
@@ -75,7 +90,14 @@ body{
     color: #E1306C;
     opacity: 0.7;
 }
+/* *********************** */
 
+#about-txt{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 25px;
+}
 
 /* *********************** */
 .previous{
@@ -127,14 +149,6 @@ body{
     background-color: white;
 }
 
-/* *********************** */
-
-#about-txt{
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-size: large;
-}
 
 /* *********************** */
 
