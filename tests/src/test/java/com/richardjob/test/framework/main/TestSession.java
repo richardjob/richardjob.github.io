@@ -7,7 +7,7 @@ public class TestSession {
 
 	WebDriver driver;
 	
-	final String CHROME_DRIVER_PATH = "C:\\WebDriver\\chromedriver.exe";
+	final String CHROME_DRIVER_PATH = "chromedriver.exe";
 	
 	final String HOME_URL = "https://richardjob.me/";
 	
