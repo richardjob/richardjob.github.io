@@ -69,6 +69,8 @@
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
 	    event.preventDefault();
 
+		$('.js-fh5co-nav-toggle').click();
+
 	    var href = $.attr(this, 'href');
 
 	    $('html, body').animate({
