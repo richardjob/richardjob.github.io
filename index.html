@@ -51,24 +51,22 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero" style="height: 100vh; overflow: hidden;">
-		<div class="home-slider owl-carousel" style="height: 100%;">
+	<section id="home-section" class="hero" style="height: 100vh; overflow: hidden; touch-action: pan-y;">
+		<div class="home-slider owl-carousel" style="height: 100%; touch-action: none; overscroll-behavior: contain; pointer-events: none;">
 			<div class="slider-item" style="height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
 				<div class="overlay"></div>
 				<div class="container" style="height: 100%;">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true" style="height: 100%;">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" 
+						data-scrollax-parent="true" style="height: 100%;">
 						<div class="one-third js-fullheight order-md-last img"
 							style="background-image:url(images/Richard_Job.png); transform: scale(0.8); height: 100%; background-size: contain; background-position: center;">
-							<div class="overlay"></div>
+							<!-- <div class="overlay"></div> -->
 						</div>
-						<div class="one-forth d-flex ftco-animate mt-5"
-							data-scrollax=" properties: { translateY: '70%' }" style="height: 100%;">
+						<div class="one-forth d-flex ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }" style="height: 100%;">
 							<div class="text">
 								<span class="subheading mt-5">Hello!</span>
 								<h1 class="mb-4 mt-3">I'm <span>Richard Job</span></h1>
 								<h2 class="mb-4"> An Automation Engineer</h2>
-								<!-- <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
 							</div>
 						</div>
 					</div>
