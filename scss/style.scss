@@ -10,6 +10,8 @@ $darken: #232931;
 $primary: #ffbd39;
 $secondary: #a0f669;
 
+$hero-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
 
 
 @mixin border-radius($radius) {
@@ -32,7 +34,7 @@ html {
 }
 body {
 	font-family: $font-primary;
-	background: $black;
+	background: $hero-bg;
 	font-size: 16px;
 	line-height: 1.8;
 	font-weight: 400;
@@ -66,7 +68,7 @@ h1, h2, h3, h4, h5,
 
 
 .ftco-navbar-light {
-	background: transparent!important;
+	background: rgba(0,0,0,0.5) !important;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -74,7 +76,7 @@ h1, h2, h3, h4, h5,
 	z-index: 3;
 	// padding-top: 30px;
 	@include media-breakpoint-down(md) {
-		background: $black!important;
+		background: rgba(0,0,0,0.5) !important;
 		position: relative;
 		top: 0;
 		padding-top: 0;
@@ -240,7 +242,7 @@ h1, h2, h3, h4, h5,
 		left: 0;
 		top: 0;
 		margin-top: -130px;
-		background: $black!important;
+		background: rgba(0,0,0,0.5) !important;
 		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 		padding: 0 15px;
 		.nav-item {
@@ -332,6 +334,11 @@ h1, h2, h3, h4, h5,
 
 
 .hero{
+	background: $hero-bg;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
 	h3.vr{
 		writing-mode: vertical-lr;
 	  transform: rotate(180deg);
@@ -981,7 +988,12 @@ h1, h2, h3, h4, h5,
 		font-size: 20px;
 		margin-bottom: 10px;
 		font-weight: 500;
-
+		color: #fff;
+		img{
+			background: white;
+			border-radius: 5px;
+			padding: 5px;
+		}
 	}
 }
 //PROGRESS BAR
@@ -1025,7 +1037,7 @@ h1, h2, h3, h4, h5,
 
 // HIRE ME
 .ftco-hireme{
-	background: $primary;
+	background: rgba(0,0,0,0.5) !important;
 	z-index: -1;
 	h2{
 		color: $white;
@@ -1205,6 +1217,7 @@ textarea.form-control {
 .ftco-section {
 	padding: 7em 0;
 	position: relative;
+	background: $hero-bg;
 	@include media-breakpoint-down(sm){
 		padding: 6em 0;
 	}
@@ -1379,7 +1392,7 @@ textarea.form-control {
 		top: 0px;
 		left: 0;
 		font-size: 7vw;
-		color: rgba(255,255,255,.1);
+		color: rgba(255,255,255,0.3);
 		z-index: -1;
 		font-weight: 900;
 		&.big-2{
@@ -1467,7 +1480,7 @@ textarea.form-control {
 		display: block;
 		width:100%;
 		text-align: center;
-		background: #191919;
+		background: rgba(0,0,0,0.5);
 		padding: 30px 20px;
 		@include border-radius(5px);
 	}

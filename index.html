@@ -51,26 +51,19 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero" style="height: 100vh; overflow: hidden; touch-action: pan-y;">
-		<div class="home-slider owl-carousel" style="height: 100%; touch-action: none; overscroll-behavior: contain; pointer-events: none;">
-			<div class="slider-item" style="height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-				<div class="overlay"></div>
-				<div class="container" style="height: 100%;">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true"
-						style="height: 100%;">
-						<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Richard_Job.png); transform: scale(0.8);
-					           height: 100%; background-size: contain; background-position: center bottom;
-					           align-self: flex-end;">
-						</div>
+	<section id="home-section" class="hero">
+		<div class="container h-100">
 
-						<div class="one-forth d-flex ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }" style="height: 100%;">
-							<div class="text mt-5">
-								<span class="subheading mt-5">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Richard Job</span></h1>
-								<h2 class="mb-1"> An Automation Engineer</h2>
-							</div>
-						</div>
-					</div>
+			<div class="row h-100 align-items-center">
+				<div class="col-md-6 text-center text-md-left ftco-animate">
+					<span class="subheading">Hello!</span>
+					<h1 class="mb-4">I'm <span>Richard Job</span></h1>
+					<h2 class="mb-4">Automation Engineer</h2>
+					<p class="mb-4">Welcome to my corner of the web!</p>
+					<a href="#about-section" class="btn btn-primary py-3 px-4">Learn More About Me</a>
+				</div>
+				<div class="col-md-6 text-center ftco-animate">
+					<img src="images/Richard_Job.png" alt="Richard Job" class="img-fluid rounded-circle shadow" style="max-width: 380px;">
 				</div>
 			</div>
 		</div>
@@ -91,8 +84,8 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>Welcome to my corner of the web! I'm Richard, an accomplished Automation Test Engineer
-								with a deep commitment to software testing and quality assurance. My journey at Deloitte
+							<p>I'm an accomplished Automation Test Engineer
+								with a deep commitment to software testing and automation. My journey in consulting
 								has been a dynamic exploration of the ever-evolving tech landscape, where I've
 								fine-tuned my skills to deliver top-notch results for clients.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
@@ -144,30 +137,81 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Role</span>
-						<h2>Automation Engineer</h2>
-						<span class="position">Deloitte USI Consulting</span>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Certification</span>
-						<h2>AWS Cloud Practitioner</h2>
-						<span class="position">Amazon Web Services</span>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2024</span>
-						<h2>Master of Computer Application</h2>
-						<span class="position">SRM University</span>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Bachelor of Computer Application</h2>
-						<span class="position">Madras Christian College</span>
-					</div>
+				<div class="col-md-12">
+					<ul class="timeline">
+						<!-- <li class="timeline-item ftco-animate recent">
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<div class="entry-image">
+									<img src="images/ey.png" alt="EY" />
+								</div>
+								<div class="text-content">
+									<i class="icon ion-briefcase timeline-icon"></i>
+									<span class="badge">Current</span>
+									<h3>Test Lead</h3>
+									<span class="position">Ernst & Young (GDS)</span>
+									<p>FEB 2026 - PRESENT</p>
+								</div>
+							</div>
+						</li> -->
+						<li class="timeline-item ftco-animate recent">
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<div class="entry-image">
+									<img src="images/deloitte.png" alt="Deloitte" />
+								</div>
+								<div class="text-content">
+									<i class="icon ion-ribbon timeline-icon"></i>
+									<span class="badge">Current</span>
+									<h3>Automation Engineer</h3>
+									<span class="position">Deloitte USI Consulting</span>
+									<p>JUL 2021 - JAN 2026</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item ftco-animate">
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<div class="entry-image">
+									<img src="images/aws.png" alt="AWS" />
+								</div>
+								<div class="text-content">
+									<i class="icon ion-ribbon timeline-icon"></i>
+									<h3>AWS Cloud Practitioner</h3>
+									<span class="position">Amazon Web Services</span>
+									<p>Certification</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item ftco-animate">
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<div class="entry-image">
+									<img src="images/srm.png" alt="SRM" />
+								</div>
+								<div class="text-content">
+									<i class="icon ion-university timeline-icon"></i>
+									<h3>Master of Computer Application</h3>
+									<span class="position">SRM University</span>
+									<p>2022 - 2024</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item ftco-animate">
+							<div class="timeline-marker"></div>
+							<div class="timeline-content">
+								<div class="entry-image">
+									<img src="images/mcc.webp" alt="Java" />
+								</div>
+								<div class="text-content">
+									<i class="icon ion-university timeline-icon"></i>
+									<h3>Bachelor of Computer Application</h3>
+									<span class="position">Madras Christian College</span>
+									<p>2018 - 2021</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="row justify-content-center mt-5">
@@ -483,8 +527,12 @@
 		</div>
 	</section> -->
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
+	<section class="ftco-section ftco-no-pt ftco-no-pb img" id="section-counter">
+		
+	</section>
+
+	<section class="ftco-section ftco-hireme ftco-counter  img margin-top">
+		<div class="container" style="padding-bottom: 50px;">
 			<div class="row d-md-flex align-items-center">
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18">
@@ -512,9 +560,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
@@ -556,26 +602,20 @@
 				</div>
 			</div>
 
-		</div>
-	</section>
-
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
 			<div class="row">
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center" style="font-size: 10px; color: lightgray;">
 
 					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="icon-heart" style="color: #ff0000" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | Inspired from <a
+							href="https://colorlib.com" target="_blank">Colorlib <i class="icon-heart" style="color: #ff0000" aria-hidden="true"></i></a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
 			</div>
+			
 		</div>
-	</footer>
+	</section>
 
 
 
