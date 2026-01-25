@@ -93,6 +93,17 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 600px;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  #fh5co-header,
+  .fh5co-cover {
+    height: 100vh;
+    background-attachment: scroll;
+  }
+  #fh5co-header .display-tc,
+  .fh5co-cover .display-tc {
+    height: 100vh;
+  }
+}
 #fh5co-header .overlay,
 .fh5co-cover .overlay {
   position: absolute;
