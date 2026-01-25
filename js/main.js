@@ -30,6 +30,9 @@
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
 		});
+		$(window).on('orientationchange', function(){
+			$('.js-fullheight').css('height', $(window).height());
+		});
 
 	};
 
